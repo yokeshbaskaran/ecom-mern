@@ -1,4 +1,4 @@
-# ecom-mern
+# Shopify
 
 ## Project Description: 
 - E-commerce website using MERN stack.
