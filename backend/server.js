@@ -12,7 +12,7 @@ const cookieParser = require("cookie-parser");
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://ecoms-mern.onrender.com"],
+    origin: ["http://localhost:5173", "https://ecoms-mern.onrender.com","https://shop-mart-wg72.onrender.com"],
     credentials: true,
   })
 );
