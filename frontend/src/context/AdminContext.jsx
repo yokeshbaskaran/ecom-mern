@@ -7,13 +7,13 @@ export function useAdmins() {
   return useContext(AdminContext);
 }
 
-// LIVE_PAGE_URL = "https://ecoms-mern.onrender.com/";
+const WEB_LINK = "https://shop-mart-wg72.onrender.com";
 
-// export const API_URL = "http://localhost:3002/api/products";
-// export const ADMIN_API_URL = "http://localhost:3002/api/admin";
+export const API_URL = WEB_LINK + "api/products";
+export const ADMIN_API_URL = WEB_LINK + "api/admin";
 
-export const API_URL = "https://ecoms-mern.onrender.com/api/products";
-export const ADMIN_API_URL = "https://ecoms-mern.onrender.com/api/admin";
+// export const API_URL = "https://ecoms-mern.onrender.com/api/products";
+// export const ADMIN_API_URL = "https://ecoms-mern.onrender.com/api/admin";
 
 export const AdminContextProvider = ({ children }) => {
   const [adminData, setAdminData] = useState(null);
