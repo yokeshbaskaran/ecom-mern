@@ -9,7 +9,7 @@ export function useAuth() {
 
 const WEB_LINK = "https://shop-mart-wg72.onrender.com";
 
-export const API_URL = WEB_LINK + "api/auth";
+export const API_URL = WEB_LINK + "/api/auth";
 
 export const AuthContextProvider = ({ children }) => {
   const [userData, setUserData] = useState(null);

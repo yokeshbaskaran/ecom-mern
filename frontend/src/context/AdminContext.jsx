@@ -9,8 +9,8 @@ export function useAdmins() {
 
 const WEB_LINK = "https://shop-mart-wg72.onrender.com";
 
-export const API_URL = WEB_LINK + "api/products";
-export const ADMIN_API_URL = WEB_LINK + "api/admin";
+export const API_URL = WEB_LINK + "/api/products";
+export const ADMIN_API_URL = WEB_LINK + "/api/admin";
 
 // export const API_URL = "https://ecoms-mern.onrender.com/api/products";
 // export const ADMIN_API_URL = "https://ecoms-mern.onrender.com/api/admin";
