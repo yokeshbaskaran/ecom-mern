@@ -8,15 +8,15 @@ import { useEffect, useState } from "react";
 
 const AdminDashBoard = () => {
   const { products, adminData } = useAdmins();
-  const [usersList, setUsersList] = useState();
+  const [usersList, setUsersList] = useState([]);
   const [ordersList, setOrdersList] = useState();
 
   useEffect(() => {
     if (adminData) {
       fetchAllUsers();
-      setOrdersList("");
+      setOrdersList([]);
     }
-  }, [usersList, adminData]);
+  }, [adminData]);
 
   const fetchAllUsers = async () => {
     const response = await fetch(API_URL + "/allUsers", {

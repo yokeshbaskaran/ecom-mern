@@ -8,7 +8,8 @@ export function useAdmins() {
 }
 
 //------------------- Deployment ---------------------
-// if local-host --> const WEB_URL = "http://localhost:3002/";
+// if local-host -->
+//const WEB_URL = "http://localhost:3002/";
 const WEB_URL = "https://shop-mart-wg72.onrender.com/";
 
 export const API_URL = WEB_URL + "api/products";
