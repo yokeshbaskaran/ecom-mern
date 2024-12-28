@@ -12,7 +12,11 @@ const cookieParser = require("cookie-parser");
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://ecoms-mern.onrender.com","https://shop-mart-wg72.onrender.com"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://shop-mart-wg72.onrender.com",
+    ],
     credentials: true,
   })
 );
@@ -40,24 +44,6 @@ app.use(express.static(path.join(__dirname, "..", "frontend", "dist")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "frontend", "dist", "index.html"));
 });
-
-// const path = require("path"); //path module
-// const __dirname1 = path.resolve();
-
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname1, "..", "frontend", "dist")));
-
-//   app.get("*", (req, res) => {
-//     res.sendFile(
-//       path.resolve(__dirname1, "..", "frontend", "dist", "index.html")
-//     );
-//   });
-
-// } else {
-//   app.get("/", (req, res) => {
-//     res.send("API is running Successfully!");
-//   });
-// }
 
 //--------------------Deployment---------------
 

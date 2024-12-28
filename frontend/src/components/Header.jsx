@@ -48,7 +48,7 @@ const Header = ({ role }) => {
             className={`h-[50px] border p-2 flex justify-between items-center text-white bg-gray-500`}
           >
             <h1 className="text-2xl">
-              <Link to="/admin">Shopify-A</Link>
+              <Link to="/">Shopify</Link>
             </h1>
 
             <ul className="flex gap-4 items-center">
@@ -84,7 +84,7 @@ const Header = ({ role }) => {
             className={`h-[50px] border p-2 flex justify-between items-center text-white bg-black opacity-80`}
           >
             <h1 className="text-2xl">
-              <Link to="/">Admin-U</Link>
+              <Link to="/admin">Admin</Link>
             </h1>
 
             <ul className="flex gap-4 items-center">

@@ -41,9 +41,10 @@ const Register = () => {
 
   return (
     <>
-      <form className="max-w-[600px] mx-auto mt-10 py-3 flex flex-col justify-center items-center gap-5">
-        <h2 className="py-5 text-3xl uppercase font-semibold">Register User</h2>
-        <div className="flex items-center gap-3">
+      <form className="max-w-[600px] h-full mx-auto mt-20 flex flex-col justify-start items-center gap-5">
+        <h2 className="py-5 text-3xl capitalize font-medium">User Register</h2>
+
+        <div className="mx-auto grid grid-cols-2 grid-rows-2 gap-5 text-end">
           <label htmlFor="e-mail">Email:</label>
 
           <input
@@ -53,24 +54,23 @@ const Register = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-        </div>
 
-        <div className="flex items-center gap-3">
           <label htmlFor="pass-word">Password:</label>
+
           <input
             id="pass-word"
             className="py-1 px-2 border border-gray-400 rounded-md"
-            type="text"
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
 
         <button
-          className="py-2 px-4 text-white bg-gray-800 rounded-lg"
+          className="py-2 px-8 text-white bg-gray-800 rounded-lg"
           onClick={handleSubmit}
         >
-          Create
+          Register
         </button>
       </form>
     </>
